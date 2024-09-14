@@ -1,0 +1,1407 @@
+:root {
+  /* fonts */
+  --font-family-jost: "Jost", sans-serif;
+  --font-family-urbanist: "Urbanist", sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  /* colors */
+  --e-global-color-primary: #141430;
+  --e-global-color-secondary: #2a2a2a;
+  --e-global-color-accent: #3dceb2;
+  --e-global-color-text: #6a6a6a;
+  --e-global-color-white: #ffffff;
+  --e-global-color-black: #000000;
+  --e-global-color-dark-moderate-blue: #2d5a7a;
+  --e-global-color-very-dark-mostly-black-blue: #10202c;
+  --e-global-color-grayish-blue: #a7b8c5;
+  --e-global-color-light-grayish-cyan: #f5fefc;
+  --e-global-color-very-light-gray: #e2e2e2;
+  --e-global-color-light-moderate-blue: #4b7797;
+  --e-global-color-light-yellow: #ffbf44;
+  --e-global-color-nav-text: #0f0200;
+  --e-global-color-very-dark-gray-mostly-black: #282828;
+  --e-global-color-star-yellow: #fbc729;
+  --e-global-color-pure-red: #ff0000;
+}
+
+/* ################################################### MEDIA QUERIES */
+
+/* ############################## @media screen min-width: 576px */
+/* @media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px !important;
+  }
+} */
+
+/* ############################## @media screen min-width: 768px */
+/* @media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} */
+
+/* ############################## @media screen min-width: 1200px */
+@media screen and (min-width: 1200px) {
+  .hero-section .container,
+  .navbar .container {
+    max-width: 1447px;
+    margin: auto;
+  }
+}
+/* ####################################### @media screen min-width: 1600px - 1730px */
+@media screen and (min-width: 1600px) and (max-width: 1730px) {
+  .hero-section .hero-wrapper .hero-icon-2 {
+    right: -550px;
+  }
+}
+/* ####################################### @media screen min-width: 1441px - 1599px */
+@media screen and (min-width: 1441px) and (max-width: 1599px) {
+  .hero-section .hero-wrapper .hero-icon-2 {
+    right: -450px;
+  }
+  .choose-section .choose-leftimage img {
+    width: 155px;
+  }
+}
+
+/* ####################################### @media screen max-width: 1440px */
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: 52px;
+    line-height: 56px;
+  }
+  /* ########################## hero-section */
+  .hero-section .hero-content {
+    /* hero content padding */
+    width: 560px;
+    padding: 100px 0;
+  }
+  .hero-section .hero-content h1 {
+    /* hero h1 heading */
+    margin-bottom: 15px;
+  }
+  .hero-section .hero-content p {
+    /* hero buttons height */
+    margin-bottom: 25px;
+  }
+  .hero-section .hero-wrapper .hero-icon-1,
+  .hero-section .hero-wrapper .hero-icon-2 {
+    /* hero section icons */
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .hero-section .hero-wrapper .hero-icon-1 {
+    /* hero icon 1 */
+    left: -162px;
+    top: 40px;
+  }
+  .hero-section .hero-wrapper .hero-icon-2 {
+    /* hero icon 2 */
+    position: absolute;
+    top: 300px;
+    left: 400px;
+  }
+  .hero-section .hero-wrapper .box {
+    /* hero wrapper box */
+    left: 100px;
+    bottom: -280px;
+    width: 245px;
+    height: 165px;
+    padding: 20px;
+  }
+  .hero-section .hero-wrapper .box .value {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 2px;
+  }
+  .hero-section .hero-wrapper .box .review {
+    margin-bottom: 10px;
+  }
+  .hero-section .hero-wrapper .box img {
+    /* hero box customers */
+    width: 50px;
+  }
+  .hero-section .hero-wrapper .box figure {
+    margin: 0 -10px;
+  }
+  .hero-section .hero-content p {
+    margin-bottom: 25px;
+  }
+  .hero-section .hero-content h5 {
+    padding-left: 60px;
+  }
+  .hero-section .hero-content h5::before {
+    width: 45px;
+  }
+  /* ############################# benefits-section */
+  .benefits-section {
+    padding: 90px 0;
+  }
+  /* ############################ about-section */
+  .about-section {
+    padding: 100px 0;
+  }
+  .about-section .bg-img img {
+    width: 260px;
+  }
+  /* #################### services section */
+  .services-section {
+    padding: 100px 0 70px;
+  }
+  /* ################### choose-us section */
+  .choose-section {
+    padding: 100px 0;
+  }
+  .choose-section .choose-leftimage {
+    display: none;
+  }
+  /* ################### faq section */
+  .faq-section {
+    padding: 100px 0;
+  }
+  /* ##################### contact section */
+  .contact-section {
+    padding: 100px 0;
+  }
+  /* ################ footer section */
+  .footer-section .contact-info {
+    margin-left: 0;
+  }
+  .footer-section .contact-info ul li:last-child {
+    padding-right: 30px;
+  }
+  .footer-section .contact-info li {
+    margin-bottom: 12px;
+  }
+}
+
+/* ####################################### @media screen max-width: 1199px */
+@media screen and (max-width: 1199px) {
+  h1 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .text-size-18 {
+    line-height: 26px;
+  }
+  /* ######################## navbar header */
+  .navbar-nav .nav-item a {
+    font-size: 15px;
+  }
+  .navbar .navbar-nav li {
+    margin: 0 12px;
+    transition: all 0.3s ease-in-out;
+  }
+  /* ############################ hero-section */
+  .hero-section .hero-content {
+    /* hero content section */
+    width: 450px;
+    padding: 80px 0;
+  }
+  .hero-section .hero-content h5 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 80px;
+    margin-bottom: 12px;
+  }
+  .hero-section .hero-content .all-button {
+    width: 170px;
+    padding: 17px;
+  }
+  .hero-section .hero-wrapper .hero-icon-1,
+  .hero-section .hero-wrapper .hero-icon-2 {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+  }
+  .hero-section .hero-wrapper .hero-icon-1 {
+    left: -135px;
+  }
+  .hero-section .hero-wrapper .hero-icon-2 {
+    top: 250px;
+    left: 300px;
+  }
+  .hero-section .hero-wrapper .box {
+    right: 50px;
+    bottom: -280px;
+    width: 200px;
+    height: 138px;
+    padding: 15px;
+  }
+  .hero-section .hero-wrapper .box .counter {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .hero-section .hero-content h5 {
+    padding-left: 60px;
+  }
+  .hero-section .hero-wrapper .box img {
+    width: 45px;
+  }
+  /* ###################### benefits-section */
+  .benefit-section .container .benefit-box li {
+    padding: 0 0px;
+  }
+  /* ######################## about-section */
+  .about-section {
+    padding: 80px 0;
+  }
+  .about-section .about-wrapper .about-img-1 img {
+    width: 310px;
+  }
+  .about-section .about-wrapper .about-img-2 img {
+    width: 195px;
+  }
+  .about-section .about-content {
+    padding: 0;
+  }
+  .about-section .about-content h6 {
+    margin-bottom: 10px;
+  }
+  .about-section .about-content h2 {
+    margin-bottom: 15px;
+  }
+  .about-section .about-content p {
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .about-section .about-content a {
+    padding: 18px 30px;
+  }
+  .about-section .bg-img img {
+    display: none;
+  }
+  .about-section .about-wrapper .banner {
+    width: 180px;
+    height: 160px;
+    padding: 18px;
+    top: 170px;
+    right: 130px;
+  }
+
+  /* ############################### benefits-section */
+  .benefits-section {
+    padding: 75px 0;
+  }
+  .benefits-section .benefit-content h6 {
+    margin-bottom: 10px;
+  }
+  .benefits-section .benefit-content h2 {
+    margin-bottom: 15px;
+  }
+  .benefits-section .benefit-wrapper li:first-child {
+    padding-left: 0;
+  }
+  .benefits-section .benefit-wrapper li:last-child {
+    padding-right: 0;
+  }
+  .benefits-section .benefit-wrapper li {
+    padding: 0 12px;
+  }
+  .benefits-section .benefit-wrapper ul li h5 {
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+  .benefits-section .benefit-wrapper .icon {
+    width: 82px;
+    height: 82px;
+    line-height: 82px;
+    margin-bottom: 18px;
+  }
+  /* ############### services section */
+  .services-section {
+    padding: 80px 0 50px;
+  }
+  .services-section .service-content h6 {
+    margin-bottom: 10px;
+  }
+  .services-section .service-content h2 {
+    margin-bottom: 40px;
+  }
+  .services-section .service-box {
+    padding: 30px 25px;
+  }
+  /* ################### choose-us section */
+  .choose-section {
+    padding: 80px 0;
+  }
+  .choose-section .choose-content {
+    padding-right: 45px;
+  }
+  .choose-section .choose-wrapper ul li {
+    margin: 0 18px;
+  }
+  .choose-section .choose-content .get-started {
+    padding: 18px 26px;
+  }
+  .choose-section .choose-content p {
+    margin-bottom: 25px;
+  }
+  .choose-section .choose-wrapper .value span {
+    font-size: 38px;
+    line-height: 38px;
+  }
+  /* ############# pricing section */
+  .pricing-section {
+    padding: 80px 0;
+  }
+  .pricing-section .pricing-content h6 {
+    margin-bottom: 14px;
+  }
+  .pricing-section .pricing-content h2 {
+    margin-bottom: 40px;
+  }
+  .pricing-section .pricing-box {
+    padding: 30px 20px 35px;
+  }
+  .pricing-section .pricing-box .content {
+    padding-bottom: 22px;
+    margin-bottom: 25px;
+  }
+  .pricing-section .pricing-box .value {
+    margin-bottom: 16px;
+  }
+  .pricing-section .pricing-box .number {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .pricing-section .pricing-box ul li {
+    margin-bottom: 10px;
+  }
+  .pricing-section .pricing-box ul li p {
+    font-size: 15px;
+    line-height: 22px;
+    padding-left: 10px;
+  }
+  /* ################ faq section */
+  .faq-section {
+    padding: 80px 0;
+  }
+  .faq-section .faq-content {
+    padding-left: 0;
+  }
+  .faq-section .faq-content h2 {
+    margin-bottom: 12px;
+  }
+  .faq-section .faq-content .text {
+    margin-bottom: 20px;
+  }
+  .faq-section .accordian-inner .card-header a {
+    padding: 12px 20px;
+  }
+  .faq-section .accordian-inner .card-body {
+    padding: 10px 20px 0;
+  }
+  /* ####################### testimonial section */
+  .testimonial-section {
+    padding: 80px 0 140px;
+  }
+  .testimonial-section .testimonial-content h6 {
+    margin-bottom: 12px;
+  }
+  .testimonial-section .testimonial-content h2 {
+    margin-bottom: 25px;
+  }
+  .testimonial-section .testimonial-sideimage {
+    left: 0;
+  }
+  .testimonial-section .testimonial-sideimage img {
+    width: 55px;
+  }
+  .testimonial-section .testimonial-box ul {
+    margin-bottom: 10px;
+  }
+  .testimonial-section .testimonial-box p {
+    margin-bottom: 20px;
+  }
+  .testimonial-section .carousel-indicators li {
+    margin: 0 6px;
+  }
+  .testimonial-section .carousel-indicators li img {
+    width: 56px;
+  }
+  .testimonial-section .carousel-indicators li figure {
+    width: 70px;
+    height: 70px;
+  }
+  /* ###################  contact section  */
+  .contact-section {
+    padding: 80px 0;
+  }
+  .contact-section .contact_content h2 {
+    margin-bottom: 14px;
+  }
+  .contact-section .contact_form input,
+  .contact-section .contact_form select,
+  .contact-section .contact_form textarea {
+    font-size: 13px;
+    width: 193px;
+    height: 50px;
+    padding: 12px;
+  }
+  .contact-section .contact_form textarea {
+    height: 100px;
+  }
+  .contact-section .contact_form .submit_now {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 24px;
+  }
+  .footer-section {
+    padding: 65px 0 20px;
+  }
+  .footer-section .logo-content {
+    padding-left: 14px;
+  }
+  .footer-section .useful-links {
+    padding-left: 0;
+  }
+  .footer-section .contact-info li {
+    margin-bottom: 0px;
+  }
+  .footer-section .contact-info ul li:last-child {
+    padding-right: 0px;
+  }
+  .footer-section .socials {
+    padding-left: 40px;
+  }
+  /* ####################### copyright */
+  .copyright p {
+    padding-block: 12px;
+  }
+}
+/* ####################################### @media max-width 991px */
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text-size-16 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* ################################ navbar header */
+  .navbar-collapse {
+    /* navbar dropdown */
+    background: var(--e-global-color-white);
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    top: 66px;
+    border-radius: 0;
+    z-index: 16;
+    padding: 0;
+    box-shadow: 0px 0px 100px rgb(0 0 0 / 25%);
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0;
+  }
+  .navbar .navbar-nav li a:hover {
+    /* hovering navbar dropdown */
+    background-color: var(--e-global-color-accent);
+    color: var(--e-global-color-white);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  /* navbar contact button */
+  .navbar .container .contact-us {
+    display: none;
+  }
+  .navbar .container .navbar-nav a {
+    /* border: 1px solid; */
+    padding: 8px 20px;
+    line-height: 25px;
+  }
+  .navbar .container .navbar-nav .active a {
+    background-color: var(--e-global-color-accent);
+    color: var(--e-global-color-white);
+  }
+  .navbar .dropdown-menu {
+    /* dropdown menu for mobile */
+    border: none;
+    box-shadow: none;
+  }
+  .navbar .dropdown-menu li a {
+    padding-left: 30px;
+  }
+  .navbar .navbar-nav li:last-child {
+    display: block;
+  }
+  /* ############################# hero-section */
+  .hero-section .hero-content h1 {
+    margin-bottom: 10px;
+  }
+  .text-size-18 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .navbar .container {
+    /* navbar width */
+    max-width: 720px;
+  }
+  .hero-section .hero-wrapper {
+    display: none;
+  }
+  .hero-section .hero-content {
+    width: 100%;
+    padding: 60px 65px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-section::after {
+    width: 100%;
+    opacity: 20%;
+    background-position: center;
+  }
+  .hero-section .hero-content h5::before {
+    display: none;
+    margin-bottom: auto;
+  }
+  .hero-section .hero-content h5 {
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 0;
+    margin-bottom: 4px;
+  }
+
+  .hero-section .hero-content .all-button {
+    width: 154px;
+    padding: 15px;
+  }
+  .all-button i {
+    margin-left: 16px;
+  }
+  /* ############################# benefits-section */
+  .benefits-section {
+    padding: 55px 0;
+  }
+  .benefits-section .benefit-content {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .benefits-section .benefit-content h6 {
+    margin-bottom: 4px;
+  }
+  .benefits-section .benefit-content h2 {
+    margin-bottom: 8px;
+  }
+  .benefits-section .benefit-box {
+    text-align: center;
+  }
+  .benefits-section .benefit-box li .icon {
+    width: 76px;
+    height: 76px;
+    line-height: 78px;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+  /* ######################### about us section */
+  .about-section {
+    padding: 60px 0;
+  }
+  .about-section .about-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-section .about-content h6 {
+    margin-bottom: 4px;
+  }
+  .about-section .about-content h2 {
+    margin-bottom: 8px;
+  }
+  .about-section .about-content p {
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .about-section .about-content a {
+    padding: 15px 22px;
+  }
+  .about-section .about-wrapper .about-img-1 {
+    position: relative;
+    left: -105px;
+  }
+  .about-section .about-wrapper .about-img-1 img {
+    width: 290px;
+  }
+  .about-section .about-wrapper .about-img-2 {
+    position: relative;
+    top: -410px;
+    right: 100px;
+  }
+  .about-section .about-wrapper .about-img-2 img {
+    width: 180px;
+  }
+  .about-section .about-wrapper .banner {
+    text-align: left;
+    top: 130px;
+    right: 200px;
+    width: 175px;
+    height: 145px;
+    padding: 12px;
+  }
+  /* ################### services-section */
+  .services-section {
+    padding: 60px 0 30px;
+  }
+  .services-section .service-content h6 {
+    margin-bottom: 4px;
+  }
+  .services-section .service-content h2 {
+    margin-bottom: 30px;
+  }
+  .services-section .service-box {
+    text-align: center;
+  }
+  .services-section .service-box h4 {
+    margin-bottom: 8px;
+  }
+  .services-section .service-box p {
+    margin-bottom: 10px;
+  }
+  .services-section .service-box .icon {
+    margin-bottom: 20px;
+  }
+  /* ################### choose-us section */
+  .choose-section {
+    padding: 60px 0;
+  }
+  .choose-section .choose-content {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  .choose-section .choose-content h6 {
+    margin-bottom: 4px;
+  }
+  .choose-section .choose-content h2 {
+    margin-bottom: 8px;
+  }
+  .choose-section .choose-content p {
+    margin-bottom: 20px;
+  }
+  .choose-section .choose-wrapper {
+    padding-top: 0px;
+    margin: auto;
+    text-align: center;
+  }
+  /* ############### pricing section */
+  .pricing-section {
+    padding: 60px 0;
+  }
+  .pricing-section .pricing-content h6 {
+    margin-bottom: 4px;
+  }
+  .pricing-section .pricing-content h2 {
+    margin-bottom: 30px;
+  }
+  .pricing-section .pricing-box {
+    padding: 20px 25px 25px;
+  }
+  .pricing-section .pricing-box .content {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .pricing-section .pricing-box .value {
+    margin-bottom: 10px;
+  }
+  .pricing-section .pricing-box .dollar {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .pricing-section .pricing-box .number {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .pricing-section .pricing-box .month {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .pricing-section .pricing-box .content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .pricing-section .pricing-box ul {
+    margin-bottom: 18px;
+  }
+  .pricing-section .pricing-box ul li {
+    margin-bottom: 4px;
+  }
+  .pricing-section .pricing-box ul li p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 6px;
+  }
+  .pricing-section .col-12:last-child {
+    margin-top: 15px;
+  }
+  /* ################ faq section */
+  .faq-section::before {
+    display: none;
+  }
+  .faq-section .faq-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .faq-section .faq-wrapper .faq-image img {
+    width: 380px;
+  }
+  .faq-section .faq-content {
+    text-align: center;
+  }
+  .faq-section .faq-content h6 {
+    margin-bottom: 4px;
+  }
+  .faq-section .faq-content h2 {
+    margin-bottom: 8px;
+  }
+  /* ###################### testimonial section */
+  .testimonial-section {
+    padding: 60px 0 120px;
+  }
+  .testimonial-section .testimonial-content h6 {
+    margin-bottom: 4px;
+  }
+  .testimonial-section .testimonial-sideimage {
+    display: none;
+  }
+  .testimonial-section .testimonial-content h2 {
+    margin-bottom: 15px;
+  }
+  .testimonial-section .carousel-inner {
+    width: 100%;
+  }
+  .testimonial-section .testimonial-box ul {
+    margin-bottom: 4px;
+  }
+  .testimonial-section .testimonial-box ul li i {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .testimonial-section .testimonial-box p {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  .testimonial-section .testimonial-box .name {
+    margin-bottom: 3px;
+  }
+  .testimonial-section .testimonial-box ul {
+    margin-bottom: 4px;
+  }
+  .testimonial-section .testimonial-box p {
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  .testimonial-section .testimonial-box .lower_content {
+    margin-bottom: 28px;
+  }
+  .testimonial-section .carousel-control-prev i {
+    left: 170px;
+  }
+  .testimonial-section .carousel-control-next i {
+    right: 160px;
+  }
+  .testimonial-section .carousel-indicators li figure {
+    line-height: 64px;
+  }
+  /* ################# contact section */
+  .contact-section {
+    padding: 60px 0;
+  }
+  .contact-section .contact_content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .contact-section .contact_content h6 {
+    margin-bottom: 4px;
+  }
+  .contact-section .contact_content h2 {
+    margin-bottom: 8px;
+  }
+  .contact-section .contact_content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact-section .contact_form .form-group {
+    float: none !important;
+  }
+  .contact-section .contact_form .form-group {
+    margin-right: 0;
+  }
+  .contact-section .contact_form input,
+  .contact-section .contact_form select,
+  .contact-section .contact_form text-area {
+    font-size: 14px;
+    width: 100%;
+    height: 45px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  .contact-section .contact_form .email {
+    margin-bottom: 0;
+  }
+  .contact-section .contact_form .message {
+    margin-bottom: 15px;
+  }
+  .contact-section .contact_form text-area {
+    height: 90px;
+  }
+  .contact-section .contact_form .button {
+    text-align: center;
+  }
+  .contact-section .contact_form .submit_now {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 16px 21px 14px;
+  }
+  /* ##################### footer section */
+  .footer-section .col-md-2 {
+    padding-left: 0;
+  }
+  .footer-section .contact-info li {
+    margin-bottom: 0px;
+  }
+  .footer-section .contact-info li a {
+    gap: 10px;
+  }
+  .footer-section .socials {
+    padding-left: 0;
+  }
+  .footer-section .socials i {
+    font-size: 14px;
+    height: 40px;
+    width: 40px;
+    line-height: 15px;
+  }
+  .footer-section .socials ul li {
+    margin-left: 0;
+  }
+}
+
+/* ################################ max-width: 767px */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .navbar-collapse {
+    top: 61px;
+  }
+  .navbar .container {
+    max-width: 540px;
+  }
+  .all-button {
+    font-size: 14px;
+    line-height: 12px;
+    min-width: 130px;
+    height: 42px;
+  }
+  .navbar {
+    padding: 15px 0;
+  }
+  .hero-section .hero-content {
+    /* hero content padding */
+    padding: 40px 0;
+  }
+  .hero-section .hero-content .all-button {
+    /* hero content buttons */
+    width: 130px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 130px;
+    height: 42px;
+  }
+  /* ########################## benefits-section */
+  .benefits-section {
+    padding: 35px 0;
+  }
+  .benefits-section .benefit-content h2 {
+    margin-bottom: 6px;
+  }
+  .benefits-section .benefit-box li .icon {
+    width: 78px;
+    height: 78px;
+    line-height: 78px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  .benefits-section .benefit-box li h5 {
+    margin-bottom: 5px;
+  }
+  .benefits-section .benefit-box li p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  /* ###################### about section */
+  .about-section {
+    padding: 40px 0;
+  }
+  .about-section .about-content h2 {
+    margin-bottom: 6px;
+  }
+  .about-section .about-content p {
+    margin-bottom: 15px;
+  }
+  .about-section .about-wrapper .about-img-1 img {
+    width: 250px;
+  }
+  .about-section .about-wrapper .about-img-2 {
+    top: -360px;
+    right: 70px;
+  }
+  .about-section .about-wrapper .about-img-2 img {
+    width: 150px;
+  }
+  .about-section .about-wrapper .banner {
+    top: 100px;
+    right: 190px;
+  }
+  /* ################ services section */
+  .services-section {
+    padding: 40px 0 10px;
+  }
+  .services-section .service-content h2 {
+    margin-bottom: 25px;
+  }
+  .services-section .service-box {
+    padding: 25px 15px;
+  }
+  .services-section .service-box .icon {
+    margin-bottom: 16px;
+  }
+  .services-section .service-box .icon img {
+    width: 44px;
+    height: 44px;
+  }
+  .services-section .service-box h4 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+  .services-section .service-box p {
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 80px;
+  }
+  /* ################# choose us section */
+  .choose-section {
+    padding: 40px 0;
+  }
+  .choose-section .choose-content h2 {
+    margin-bottom: 6px;
+  }
+  .choose-section .choose-content p {
+    margin-bottom: 15px;
+  }
+  .choose-section .choose-wrapper .value {
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .choose-section .choose-wrapper .value span {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .choose-section .choose-wrapper .text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  /* ################### pricing-section */
+  .pricing-section {
+    padding: 40px 0;
+  }
+  .pricing-section .pricing-content h2 {
+    margin-bottom: 25px;
+  }
+  .pricing-section .pricing-box {
+    padding: 25px 18px 30px;
+    margin-bottom: 10px;
+  }
+  .pricing-section .pricing-box .value {
+    margin-bottom: 8px;
+  }
+  .pricing-section .pricing-box h4 {
+    margin-bottom: 4px;
+  }
+  .pricing-section .pricing-box ul li p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 5px;
+  }
+  /* ################## faq section */
+  .faq-section {
+    padding: 40px 0;
+  }
+  .faq-section .faq-wrapper {
+    margin-bottom: 22px;
+  }
+  .faq-section .faq-wrapper .faq-image img {
+    width: 335px;
+  }
+  .faq-section .faq-content .text {
+    padding: 0 30px;
+  }
+  .faq-section .faq-content .accordian-inner .card-body p {
+    font-size: 15px;
+  }
+  /* ############### testimonial section */
+  .testimonial-section {
+    padding: 40px 0 100px;
+  }
+  .testimonial-section .testimonial-content h2 {
+    margin-bottom: 10px;
+  }
+  .testimonial-section .testimonial-box p {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .testimonial-section .testimonial-box .name {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+  .testimonial-section .testimonial-box ul li i {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .testimonial-section .carousel-indicators li figure {
+    width: 64px;
+    height: 64px;
+    line-height: 59px;
+  }
+  .testimonial-section .carousel-indicators li img {
+    width: 52px;
+  }
+  .testimonial-section .carousel-indicators li {
+    margin: 0 3px;
+  }
+  .testimonial-section .carousel-control-prev i {
+    top: 12px;
+    font-size: 15px;
+    left: 90px;
+  }
+  .testimonial-section .carousel-control-next i {
+    font-size: 15px;
+    top: 12px;
+    right: 85px;
+  }
+  /* ################## contact section */
+  .contact-section {
+    padding: 40px 0;
+  }
+  .contact-section .contact_content h6 {
+    margin-bottom: 4px;
+  }
+  .contact-section .contact_content h2 {
+    margin-bottom: 6px;
+  }
+  .contact-section .contact_form textarea {
+    height: 80px;
+    padding: 8px 12px;
+  }
+  /* ############### footer section */
+  .footer-section {
+    padding: 50px 0 0px;
+  }
+  .footer-section .logo-content {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .footer-section .logo-content img {
+    width: 160px;
+    margin-right: 12px;
+    margin-bottom: -5px;
+  }
+  .footer-section .socials i {
+    font-size: 12px;
+    height: 40px;
+    width: 40px;
+    line-height: 13px;
+  }
+  .footer-section .contact-info li {
+    margin-bottom: -5px;
+  }
+  .footer-section .contact-info i {
+    font-size: 12px;
+  }
+}
+/* ############################ max-width: 575px */
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .all-button {
+    line-height: 16px;
+  }
+  .text-size-16 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .text-size-18 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .navbar-collapse {
+    top: 61px;
+  }
+  .navbar {
+    padding: 14px 0;
+  }
+  .navbar .logo img {
+    width: 156px;
+  }
+  /* ################# hero section */
+  .hero-section .hero-content h1 {
+    margin-bottom: 8px;
+  }
+  .hero-section .hero-content p {
+    margin-bottom: 15px;
+  }
+  .hero-section .hero-content .hero-btns a:first-child {
+    margin-right: 5px;
+  }
+
+  /* ################## benefits-section */
+  .benefits-section .benefit-box {
+    display: block;
+  }
+  .benefits-section .benefit-box li {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .benefits-section .benefit-wrapper ul li h5 {
+    line-height: 20px;
+    margin-bottom: 2px;
+  }
+  .benefits-section .benefit-wrapper ul li p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .benefits-section .benefit-wrapper ul li:last-child {
+    margin-bottom: 0px;
+  }
+  /* ###################### about-section */
+  .about-section .about-wrapper .about-img-1 img {
+    width: 180px;
+    border-radius: 15px;
+  }
+  .about-section .about-wrapper .about-img-1 {
+    left: -50px;
+  }
+  .about-section .about-wrapper .about-img-2 {
+    display: none;
+  }
+  .about-section .about-wrapper .banner {
+    top: 50px;
+    left: 140px;
+    width: 155px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .about-section .about-wrapper .banner .icon {
+    margin-bottom: 6px;
+  }
+  .about-section .about-wrapper .banner h6 {
+    margin-bottom: 2px;
+    line-height: 20px;
+  }
+  .about-section .about-content a {
+    padding: 13px 20px;
+  }
+  .about-section .about-wrapper .banner {
+    right: 50px;
+  }
+  .about-section .about-wrapper .about-img-1 {
+    left: -40px;
+    top: 0px;
+  }
+  .about-section .about-content {
+    margin-bottom: 25px;
+  }
+  /* ############### services section */
+  .services-section .service-box {
+    width: 320px;
+    margin: 0 auto 15px;
+  }
+  .services-section .service-box p {
+    margin-bottom: 10px;
+    min-height: fit-content;
+  }
+  /* ################## choose-us section */
+  .choose-section {
+    padding: 40px 0;
+  }
+  .choose-section .choose-content {
+    margin-bottom: 25px;
+  }
+  .choose-section .choose-content .get-started {
+    padding: 13px 20px;
+  }
+  .choose-section .choose-wrapper .value span {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .choose-section .choose-wrapper ul li {
+    margin: 0 10px;
+  }
+  .choose-section .choose-wrapper .text {
+    font-size: 12px;
+  }
+  /* ################### pricing section */
+  .pricing-section {
+    padding: 30px 0;
+  }
+  .pricing-section .pricing-content h6 {
+    margin-bottom: 4px;
+  }
+  .pricing-section .pricing-content h2 {
+    padding-inline: 25px;
+  }
+  .pricing-section .pricing-box {
+    padding: 30px;
+    width: 330px;
+    margin: 0 auto 30px;
+  }
+  /* #################### faq section */
+  .faq-section .faq-wrapper .faq-image img {
+    width: 245px;
+  }
+  .faq-section .faq-content .text {
+    padding: 0;
+  }
+  .faq-section .accordian-inner .card-header a {
+    padding: 10px 16px;
+  }
+  .faq-section .accordian-inner .card-header i {
+    font-size: 13px;
+  }
+  .faq-section .accordian-inner .card-body {
+    padding: 12px 16px 0;
+  }
+  .faq-section .faq-content .accordian-inner .card-body p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  /* ################### testimonial section */
+  .testimonial-section {
+    padding: 40px 0 90px;
+  }
+  .testimonial-section .testimonial-content h6 {
+    margin-bottom: 4px;
+  }
+  .testimonial-section .testimonial-content h2 {
+    margin-bottom: 10px;
+  }
+  .testimonial-section .testimonial-box ul li i {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .testimonial-section .testimonial-box p {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  .testimonial-section .testimonial-box .name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .testimonial-section .testimonial-box .review {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .testimonial-section .carousel-indicators li {
+    margin: 0;
+  }
+  .testimonial-section .carousel-indicators li figure {
+    width: 58px;
+    height: 58px;
+    line-height: 52px;
+  }
+  .testimonial-section .carousel-indicators li img {
+    width: 44px;
+  }
+  .testimonial-section .carousel-control-prev,
+  .testimonial-section .carousel-control-next {
+    display: none;
+  }
+  /* ################# contact section */
+  .contact-section .contact_content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .contact-section .contact_content h2 {
+    padding-inline: 20px;
+  }
+  .contact-section .contact_form .submit_now {
+    font-size: 14px;
+    line-height: 10px;
+    padding: 14px 19px 12px;
+  }
+  /* ############# footer section */
+  .footer-section {
+    padding: 50px 0 15px 0;
+  }
+  .footer-section .logo-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .footer-section .logo-content p {
+    width: 100%;
+  }
+
+  .footer-section .logo-content figure {
+    margin-bottom: 15px;
+  }
+  .footer-section .logo-content figure img {
+    width: 156px;
+  }
+  .footer-section .contact-info {
+    margin-left: -25px;
+  }
+  .footer-section .useful-links {
+    padding-left: 20px;
+  }
+}
